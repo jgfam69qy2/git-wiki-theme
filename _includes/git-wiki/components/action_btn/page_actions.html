@@ -21,8 +21,6 @@
 
     {% endif %}
 
-    <span class="tools-element"><a target="_blank" href="{{ site.github.repository_url }}/commits/{{site.git_branch | escape}}/{{ site.site_root | default: '/' }}{{page.path | escape}}">History</a></span>
-    <span class="tools-element"><a target="_blank" href="{{ site.github.repository_url }}/blob/{{site.git_branch | escape}}/{{ site.site_root | default: '/' }}{{page.path | escape}}">Source</a></span>
     {% if site.blog_feature %}
     {% endif %}
     {% if site.use_prose_io and site.github.hostname != "gitlab.com" %}
