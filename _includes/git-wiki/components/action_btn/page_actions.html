@@ -9,8 +9,7 @@
     {% else %}
 
     {% if site.disable_edit != true %}
-    <span class="tools-element"><a target="_blank" href="{{ site.github.repository_url }}/new/{{site.git_branch | escape}}?filename={{ site.site_root | default: '/' }}{{ site.wiki_folder }}/">Add
-            new</a></span>
+    <span class="tools-element"><a target="_blank" href="{{ site.github.repository_url }}/new/{{site.git_branch | escape}}?filename={{ site.site_root | default: '/' }}{{ site.wiki_folder }}/">Add new page</a></span>
     <span class="tools-element"><a target="_blank" href="{{ site.github.repository_url }}/edit/{{site.git_branch | escape}}/{{ site.site_root | default: '/' }}{{page.path | escape}}">Edit</a></span>
 
     {% if site.github.hostname == "gitlab.com" %}
